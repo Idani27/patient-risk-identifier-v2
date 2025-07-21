@@ -16,11 +16,11 @@ This project uses machine learning to predict the mental health risk level of st
 
 ## 📁 Folder Structure
 patient-risk-identifier-v2/
-├── index.html # Web interface for predictions
-├── Project_Notebook.ipynb # Jupyter notebook with EDA and model pipeline
-├── my_model.pkl # Trained machine learning model
-├── app.py # Flask backend to serve the model
-├── Student Mental health.csv.xlsx # Original dataset used
+├── index.html # Web interface for predictions  
+├── Project_Notebook.ipynb # Jupyter notebook with EDA and model pipeline  
+├── my_model.pkl # Trained machine learning model  
+├── app.py # Flask backend to serve the model  
+├── Student Mental health.csv.xlsx # Original dataset used  
 └── Machine Learning-Based Patient Risk Identification for Mental Health.pptx # Final project presentation
 
 ---
