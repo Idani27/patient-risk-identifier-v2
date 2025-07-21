@@ -52,13 +52,18 @@ patient-risk-identifier-v2/
    ```bash
    git clone https://github.com/Idani27/patient-risk-identifier-v2.git
    cd patient-risk-identifier-v2
-2. **Install Dependencies**
+   
+2. **Install Dependencies**  
 pip install pandas numpy scikit-learn flask matplotlib seaborn
-3. **Run the Flask App**
+
+4. **Run the Flask App**  
 python app.py
-4. **Access the Web Interface**
+
+6. **Access the Web Interface**  
 Open your browser and go to:
 http://127.0.0.1:5000/
+
+--
 
 📊 Dataset
 The project uses a real-world student mental health dataset, formatted as:
@@ -67,19 +72,27 @@ Excel file: Student Mental health.csv.xlsx
 
 Contains demographic, academic, and mental health-related fields.
 
+--
+
 📽️ Presentation
-You can find the final project presentation here:
+You can find the final project presentation here:  
 
 Machine Learning-Based Patient Risk Identification for Mental Health.pptx
+
+--
 
 ⚠️ Disclaimer
 This tool is developed strictly for educational and research purposes. It is not intended to provide medical or psychological diagnoses. Always consult licensed professionals when dealing with mental health concerns.
 
+--
+
 📄 License
 This repository is open-source and free to use for educational, non-commercial projects.
 
-📫 Contact
-For questions, feedback, or collaboration:
+--
+
+📫 Contact  
+For questions, feedback, or collaboration:  
 
 email: singoidani7@gmail.com
 
