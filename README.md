@@ -63,7 +63,7 @@ python app.py
 Open your browser and go to:
 http://127.0.0.1:5000/
 
---
+---
 
 📊 Dataset
 The project uses a real-world student mental health dataset, formatted as:
@@ -72,24 +72,24 @@ Excel file: Student Mental health.csv.xlsx
 
 Contains demographic, academic, and mental health-related fields.
 
---
+---
 
 📽️ Presentation
 You can find the final project presentation here:  
 
 Machine Learning-Based Patient Risk Identification for Mental Health.pptx
 
---
+---
 
 ⚠️ Disclaimer
 This tool is developed strictly for educational and research purposes. It is not intended to provide medical or psychological diagnoses. Always consult licensed professionals when dealing with mental health concerns.
 
---
+---
 
 📄 License
 This repository is open-source and free to use for educational, non-commercial projects.
 
---
+---
 
 📫 Contact  
 For questions, feedback, or collaboration:  
