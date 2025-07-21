@@ -16,7 +16,8 @@ This project uses machine learning to predict the mental health risk level of st
 
 ## 📁 Folder Structure
 patient-risk-identifier-v2/  
-├── index.html # Web interface for predictions  
+├── templates/  
+│   └── index.html # Web interface for predictions  
 ├── Project_Notebook.ipynb # Jupyter notebook with EDA and model pipeline  
 ├── my_model.pkl # Trained machine learning model  
 ├── app.py # Flask backend to serve the model  
@@ -43,6 +44,19 @@ patient-risk-identifier-v2/
 - **Machine Learning Pipeline:** Data preprocessing, model training, evaluation, and saving using `joblib`.
 - **Web App:** A simple form that lets users input data and receive a prediction instantly.
 - **Presentation-Ready:** Includes a professional PowerPoint deck summarizing the project and findings.
+
+---
+
+## 📁 Flask Template Note
+
+Flask automatically looks for HTML files inside a folder named `templates/` (lowercase and plural).  
+Make sure your `index.html` file is located at:
+
+patient-risk-identifier-v2/  
+├── templates/  
+│ └── index.html  
+
+Otherwise, you may get a `TemplateNotFound` error when running the app.
 
 ---
 
