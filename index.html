@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Mental Health Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background-color: #f4f4f4;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        select, button {
+            margin-top: 5px;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        .safe {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .risk {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🧠 Student Mental Health Risk Prediction</h1>
+
+    <form method="POST" action="/predict">
+        <label for="depression">Depression:</label>
+        <select name="depression" id="depression" required>
+            <option value="">-- Select --</option>
+            <option value="Yes" {% if depression == 'Yes' %}selected{% endif %}>Yes</option>
+            <option value="No" {% if depression == 'No' %}selected{% endif %}>No</option>
+        </select>
+
+        <label for="anxiety">Anxiety:</label>
+        <select name="anxiety" id="anxiety" required>
+            <option value="">-- Select --</option>
+            <option value="Yes" {% if anxiety == 'Yes' %}selected{% endif %}>Yes</option>
+            <option value="No" {% if anxiety == 'No' %}selected{% endif %}>No</option>
+        </select>
+
+        <label for="panic">Panic Attacks:</label>
+        <select name="panic" id="panic" required>
+            <option value="">-- Select --</option>
+            <option value="Yes" {% if panic == 'Yes' %}selected{% endif %}>Yes</option>
+            <option value="No" {% if panic == 'No' %}selected{% endif %}>No</option>
+        </select>
+
+        <label for="treatment">Receiving Treatment:</label>
+        <select name="treatment" id="treatment" required>
+            <option value="">-- Select --</option>
+            <option value="Yes" {% if treatment == 'Yes' %}selected{% endif %}>Yes</option>
+            <option value="No" {% if treatment == 'No' %}selected{% endif %}>No</option>
+        </select>
+
+        <button type="submit">🔍 Predict Risk</button>
+    </form>
+
+    {% if prediction %}
+        <div class="result {{ status }}">
+            <strong>{{ prediction }}</strong>
+        </div>
+    {% endif %}
+
+</body>
+</html>
